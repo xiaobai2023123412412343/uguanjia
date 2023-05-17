@@ -86,3 +86,18 @@ python3 check.py
 python3 bot.py
 
 把机器人的webhook地址指向你自己搭建的服务器地址 完事。
+
+导入数据库产考这个
+登录数据库 mysql -u root -p
+
+CREATE USER 'tgexchange'@'localhost' IDENTIFIED BY 'tgexchange';
+
+CREATE DATABASE tgexchange;
+
+GRANT ALL PRIVILEGES ON shandui.* TO 'tgexchange'@'localhost';
+
+FLUSH PRIVILEGES;
+
+exit;
+
+mysql -u tgexchange -p tgexchange < ./tgexchange.sql
