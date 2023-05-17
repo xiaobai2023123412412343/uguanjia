@@ -1,7 +1,9 @@
 git clone https://github.com/xiaobai2023123412412343/uguanjia.git
 
 sudo apt update
+
 sudo apt install python3
+
 python3 --version
 
 运行脚本:python3.10+
